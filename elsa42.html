@@ -6,6 +6,12 @@
 <link type="text/css" href="css/main.css" rel="stylesheet" media="screen" />		
 </head>
 <body>
+
+<!-- 翻書頁面需考慮各款手機的長、寬比率，若比率沒調整好，手機翻轉橫放時，可能會產生頁面下方頁面被切除！
+	 例如：原來參考引用的html內頁設定為 width="466" height="463" ，SONY手機翻轉橫放就會產生下方頁面被切除；
+	       把它改為 width="466" height="280" ，左右頁面就會完整呈現！
+	 不過： height="463" 改為 height="280" ，手機直立畫面的頁面高度就變小了！ -->
+
 <div id="shineflip">
 	<div id="shineflip-pages">
 		<canvas id="shineflip-canvas"></canvas>
